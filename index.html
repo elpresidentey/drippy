@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dripz & Kix | Premium Sneakers</title>
+  <meta name="description" content="Discover premium sneakers at Dripz & Kix. Fresh drops, curated collections, and fast delivery across Nigeria.">
+  <meta name="keywords" content="sneakers, shoes, streetwear, Nigeria, premium, drip, kix">
+  <meta property="og:title" content="Dripz & Kix | Premium Sneakers">
+  <meta property="og:description" content="Step into style with fresh sneaker drops and curated collections.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="theme-color" content="#0f0f0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+  <a href="#home" class="skip-link">Skip to content</a>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="#home">Dripz & Kix</a>
+      <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNavigation" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="primaryNavigation">
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="btn-cart" aria-label="Cart" type="button">🛒 Cart <span class="cart-count" aria-live="polite" aria-atomic="true">0</span></button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="eyebrow">NEW SEASON • LIMITED DROPS</div>
+      <h1>
+        Step Into <span class="highlight">Style</span>
+      </h1>
+      <p>Premium sneakers curated for everyday flex and performance. Fresh arrivals weekly. Fast delivery nationwide.</p>
+      <div class="hero-ctas">
+        <button class="btn-primary" id="shopNowBtn" type="button">Shop Now</button>
+        <button class="btn-secondary" id="viewCollectionsBtn" type="button">View Collections</button>
+      </div>
+      <div class="hero-badges" aria-label="store highlights">
+        <span class="chip">Free Shipping</span>
+        <span class="chip">Pay on Delivery</span>
+        <span class="chip">7‑day Returns</span>
+      </div>
+    </div>
+    <div class="hero-image" id="heroSlider" aria-label="Featured sneakers" aria-hidden="true">
+      <img class="hero-slide active" src="https://images.unsplash.com/photo-1626379616459-b2ce1d9decbc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Premium sneakers on gradient background" loading="eager" fetchpriority="high" decoding="async" referrerpolicy="no-referrer">
+      <img class="hero-slide" src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1974&auto=format&fit=crop" alt="Minimal sneaker close-up" loading="lazy" fetchpriority="low" decoding="async" referrerpolicy="no-referrer">
+      <img class="hero-slide" src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1974&auto=format&fit=crop" alt="Running shoes on display" loading="lazy" fetchpriority="low" decoding="async" referrerpolicy="no-referrer">
+    </div>
+
+
+  </section>
+
+  <!-- Hottest Collections -->
+  <section class="products" id="hottest" aria-labelledby="hottestTitle">
+    <div class="section-header">
+      <h2 id="hottestTitle">Hottest Collections</h2>
+      <p>Most-loved pairs everyone’s talking about.</p>
+    </div>
+    <div class="product-grid">
+      <article class="card">
+        <a class="card-link" href="#shop" aria-label="Classic White details">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1470&auto=format&fit=crop" alt="White classic sneaker" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        </a>
+        <div class="card-body">
+          <h3><a class="card-link" href="#shop">Classic White</a></h3>
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(128)</span></div>
+          <div class="price-group"><span class="price-current">₦42,500</span><span class="price-compare">₦49,900</span></div>
+          <div class="badges"><span class="badge sale">SALE</span><span class="badge">Free Delivery</span></div>
+          <span class="sku">SKU: DK-CW-001</span>
+          <p class="desc">Minimal, clean silhouette. Premium leather upper for daily wear.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="39">39</button>
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+              <button class="size" data-size="43">43</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Triple White" style="--sw:#eaeaea"></button>
+              <button class="swatch" title="Cream" style="--sw:#dcd7c9"></button>
+              <button class="swatch" title="Charcoal" style="--sw:#3a3a3a"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="#shop" aria-label="Night Runner details">
+          <img src="https://images.unsplash.com/photo-1542291024-93e9f32d06ae?q=80&w=1470&auto=format&fit=crop" alt="Black runner" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        </a>
+        <div class="card-body">
+          <h3><a class="card-link" href="#shop">Night Runner</a></h3>
+          <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(74)</span></div>
+          <div class="price-group"><span class="price-current">₦58,000</span><span class="price-compare">₦64,500</span></div>
+          <div class="badges"><span class="badge">New</span><span class="badge">Pay on Delivery</span></div>
+          <span class="sku">SKU: DK-NR-013</span>
+          <p class="desc">Breathable mesh with responsive sole for training and runs.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+              <button class="size" data-size="43">43</button>
+              <button class="size" data-size="44">44</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Onyx" style="--sw:#1a1a1a"></button>
+              <button class="swatch" title="Graphite" style="--sw:#3c3c3c"></button>
+              <button class="swatch" title="Steel" style="--sw:#6f6f6f"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="#shop" aria-label="Color Pop details">
+          <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?q=80&w=1470&auto=format&fit=crop" alt="Color pop sneaker" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        </a>
+        <div class="card-body">
+          <h3><a class="card-link" href="#shop">Color Pop</a></h3>
+          <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(53)</span></div>
+          <div class="price-group"><span class="price-current">₦49,900</span><span class="price-compare">₦55,000</span></div>
+          <div class="badges"><span class="badge">Limited</span><span class="badge">7‑day Returns</span></div>
+          <span class="sku">SKU: DK-CP-207</span>
+          <p class="desc">Statement colors with cushioned midsole for comfort.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="39">39</button>
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Smoke" style="--sw:#8a8a8a"></button>
+              <button class="swatch" title="Ash" style="--sw:#bdbdbd"></button>
+              <button class="swatch" title="Jet" style="--sw:#101010"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Trending Collections -->
+  <section class="products" id="trending" aria-labelledby="trendingTitle">
+    <div class="section-header">
+      <h2 id="trendingTitle">Trending Collections</h2>
+      <p>What’s trending this week across the community.</p>
+    </div>
+    <div class="product-grid">
+      <article class="card">
+        <a class="card-link" href="#shop" aria-label="Retro Court details">
+          <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=1470&auto=format&fit=crop" alt="Retro court sneaker" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        </a>
+        <div class="card-body">
+          <h3><a class="card-link" href="#shop">Retro Court</a></h3>
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(210)</span></div>
+          <div class="price-group"><span class="price-current">₦61,500</span><span class="price-compare">₦69,000</span></div>
+          <div class="badges"><span class="badge sale">SALE</span><span class="badge">Free Delivery</span></div>
+          <span class="sku">SKU: DK-RC-112</span>
+          <p class="desc">Throwback look with modern cushioning and durability.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+              <button class="size" data-size="43">43</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Chalk" style="--sw:#efefef"></button>
+              <button class="swatch" title="Slate" style="--sw:#7b7f86"></button>
+              <button class="swatch" title="Ink" style="--sw:#0f0f13"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-link" href="#shop" aria-label="Runner Pro details">
+          <img src="assets/runner-pro.jpg" alt="Runner Pro in graphite grey" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        </a>
+        <div class="card-body">
+          <h3><a class="card-link" href="#shop">Runner Pro</a></h3>
+          <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(98)</span></div>
+          <div class="price-group"><span class="price-current">₦72,000</span><span class="price-compare">₦79,500</span></div>
+          <div class="badges"><span class="badge">New</span><span class="badge">Pay on Delivery</span></div>
+          <span class="sku">SKU: DK-RP-305</span>
+          <p class="desc">Lightweight build and springy energy return.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+              <button class="size" data-size="43">43</button>
+              <button class="size disabled" data-size="44" disabled>44</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Fog" style="--sw:#c7c7c7"></button>
+              <button class="swatch" title="Shadow" style="--sw:#2b2b2b"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-link" href="#shop" aria-label="Minimal Slip details">
+          <img src="https://images.unsplash.com/photo-1520256862855-398228c41684?q=80&w=1470&auto=format&fit=crop" alt="Minimalist slip-on" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        </a>
+        <div class="card-body">
+          <h3><a class="card-link" href="#shop">Minimal Slip</a></h3>
+          <div class="rating"><span class="stars">★★★☆☆</span><span class="rating-count">(41)</span></div>
+          <div class="price-group"><span class="price-current">₦36,500</span><span class="price-compare">₦39,900</span></div>
+          <div class="badges"><span class="badge">Everyday</span><span class="badge">7‑day Returns</span></div>
+          <span class="sku">SKU: DK-MS-018</span>
+          <p class="desc">Effortless on/off and comfy foam footbed.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="39">39</button>
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Mist" style="--sw:#d8d8d8"></button>
+              <button class="swatch" title="Pebble" style="--sw:#a0a0a0"></button>
+              <button class="swatch" title="Coal" style="--sw:#121212"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Upcoming Sneakers -->
+  <section class="products" id="upcoming" aria-labelledby="upcomingTitle">
+    <div class="section-header">
+      <h2 id="upcomingTitle">Upcoming Sneakers</h2>
+      <p>Reserve your pair from the next big drops.</p>
+    </div>
+    <div class="product-grid">
+      <article class="card">
+        <a class="card-link" href="#shop" aria-label="Future Flex details">
+          <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=1470&auto=format&fit=crop" alt="Futuristic sneaker" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        </a>
+        <div class="card-body">
+          <h3><a class="card-link" href="#shop">Future Flex</a></h3>
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(Pre‑order)</span></div>
+          <div class="price-group"><span class="price-current">₦85,000</span></div>
+          <div class="badges"><span class="badge">Pre‑order</span><span class="badge">Limited</span></div>
+          <span class="sku">SKU: DK-FF-901</span>
+          <p class="desc">Next‑gen knit upper with energy plate.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+              <button class="size" data-size="43">43</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Neon" style="--sw:#39ff14"></button>
+              <button class="swatch" title="Iris" style="--sw:#5b6cff"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-link" href="#shop" aria-label="Street Proto details">
+          <img src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=1470&auto=format&fit=crop" alt="Concept street sneaker" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        </a>
+        <div class="card-body">
+          <h3><a class="card-link" href="#shop">Street Proto</a></h3>
+          <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(Pre‑order)</span></div>
+          <div class="price-group"><span class="price-current">₦59,900</span></div>
+          <div class="badges"><span class="badge">Pre‑order</span><span class="badge">Everyday</span></div>
+          <span class="sku">SKU: DK-SP-742</span>
+          <p class="desc">Urban‑ready build with bounce foam.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="39">39</button>
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Silver" style="--sw:#c0c0c0"></button>
+              <button class="swatch" title="Black" style="--sw:#111"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="card">
+        <a class="card-link" href="#shop" aria-label="Track Alpha details">
+          <img src="https://images.unsplash.com/photo-1519744346366-3f47d5a5fd54?q=80&w=1470&auto=format&fit=crop" alt="Performance runner concept" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        </a>
+        <div class="card-body">
+          <h3><a class="card-link" href="#shop">Track Alpha</a></h3>
+          <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(Pre‑order)</span></div>
+          <div class="price-group"><span class="price-current">₦69,500</span></div>
+          <div class="badges"><span class="badge">Pre‑order</span><span class="badge">Performance</span></div>
+          <span class="sku">SKU: DK-TA-388</span>
+          <p class="desc">Performance‑tuned midsole for daily training.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Smoke" style="--sw:#8a8a8a"></button>
+              <button class="swatch" title="Jet" style="--sw:#101010"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <h3>🔥 Latest Trends</h3>
+      <p>Always stay ahead with fresh sneaker drops curated just for you.</p>
+    </div>
+    <div class="feature">
+      <h3>💳 Easy Payments</h3>
+      <p>Secure and hassle-free payment options for your convenience.</p>
+    </div>
+    <div class="feature">
+      <h3>🚚 Fast Delivery</h3>
+      <p>Get your sneakers delivered quickly, anywhere in Nigeria.</p>
+    </div>
+  </section>
+
+  <!-- Shop Preview -->
+  <section class="products" id="shop" aria-labelledby="productsTitle">
+    <div class="section-header">
+      <h2 id="productsTitle">Fresh Drops</h2>
+      <p>Handpicked picks from this week’s arrivals.</p>
+    </div>
+    <div class="product-grid">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1470&auto=format&fit=crop" alt="White classic sneaker" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <div class="card-body">
+          <h3>Classic White</h3>
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(128)</span></div>
+          <div class="price-group"><span class="price-current">₦42,500</span><span class="price-compare">₦49,900</span></div>
+          <div class="badges"><span class="badge sale">SALE</span><span class="badge">Free Delivery</span></div>
+          <span class="sku">SKU: DK-CW-001</span>
+          <p class="desc">Minimal, clean silhouette. Premium leather upper for daily wear.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="39">39</button>
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+              <button class="size" data-size="43">43</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Triple White" style="--sw:#eaeaea"></button>
+              <button class="swatch" title="Cream" style="--sw:#dcd7c9"></button>
+              <button class="swatch" title="Charcoal" style="--sw:#3a3a3a"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1542291024-93e9f32d06ae?q=80&w=1470&auto=format&fit=crop" alt="Black runner" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <div class="card-body">
+          <h3>Night Runner</h3>
+          <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(74)</span></div>
+          <div class="price-group"><span class="price-current">₦58,000</span><span class="price-compare">₦64,500</span></div>
+          <div class="badges"><span class="badge">New</span><span class="badge">Pay on Delivery</span></div>
+          <span class="sku">SKU: DK-NR-013</span>
+          <p class="desc">Breathable mesh with responsive sole for training and everyday runs.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+              <button class="size" data-size="43">43</button>
+              <button class="size" data-size="44">44</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Onyx" style="--sw:#1a1a1a"></button>
+              <button class="swatch" title="Graphite" style="--sw:#3c3c3c"></button>
+              <button class="swatch" title="Steel" style="--sw:#6f6f6f"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?q=80&w=1470&auto=format&fit=crop" alt="Color pop sneaker" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <div class="card-body">
+          <h3>Color Pop</h3>
+          <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(53)</span></div>
+          <div class="price-group"><span class="price-current">₦49,900</span><span class="price-compare">₦55,000</span></div>
+          <div class="badges"><span class="badge">Limited</span><span class="badge">7‑day Returns</span></div>
+          <span class="sku">SKU: DK-CP-207</span>
+          <p class="desc">Statement colors with cushioned midsole for all-day comfort.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="39">39</button>
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Smoke" style="--sw:#8a8a8a"></button>
+              <button class="swatch" title="Ash" style="--sw:#bdbdbd"></button>
+              <button class="swatch" title="Jet" style="--sw:#101010"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+      <!-- New products -->
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=1470&auto=format&fit=crop" alt="Retro court sneaker" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <div class="card-body">
+          <h3>Retro Court</h3>
+          <div class="rating"><span class="stars">★★★★★</span><span class="rating-count">(210)</span></div>
+          <div class="price-group"><span class="price-current">₦61,500</span><span class="price-compare">₦69,000</span></div>
+          <div class="badges"><span class="badge sale">SALE</span><span class="badge">Free Delivery</span></div>
+          <span class="sku">SKU: DK-RC-112</span>
+          <p class="desc">Throwback look with modern cushioning and durable outsole.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+              <button class="size" data-size="43">43</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Chalk" style="--sw:#efefef"></button>
+              <button class="swatch" title="Slate" style="--sw:#7b7f86"></button>
+              <button class="swatch" title="Ink" style="--sw:#0f0f13"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/runner-pro.jpg" alt="Runner Pro in graphite grey" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <div class="card-body">
+          <h3>Runner Pro</h3>
+          <div class="rating"><span class="stars">★★★★☆</span><span class="rating-count">(98)</span></div>
+          <div class="price-group"><span class="price-current">₦72,000</span><span class="price-compare">₦79,500</span></div>
+          <div class="badges"><span class="badge">New</span><span class="badge">Pay on Delivery</span></div>
+          <span class="sku">SKU: DK-RP-305</span>
+          <p class="desc">Lightweight build, engineered mesh, and springy energy return.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+              <button class="size" data-size="42">42</button>
+              <button class="size" data-size="43">43</button>
+              <button class="size disabled" data-size="44" disabled>44</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Fog" style="--sw:#c7c7c7"></button>
+              <button class="swatch" title="Shadow" style="--sw:#2b2b2b"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1520256862855-398228c41684?q=80&w=1470&auto=format&fit=crop" alt="Minimalist slip-on" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+        <div class="card-body">
+          <h3>Minimal Slip</h3>
+          <div class="rating"><span class="stars">★★★☆☆</span><span class="rating-count">(41)</span></div>
+          <div class="price-group"><span class="price-current">₦36,500</span><span class="price-compare">₦39,900</span></div>
+          <div class="badges"><span class="badge">Everyday</span><span class="badge">7‑day Returns</span></div>
+          <span class="sku">SKU: DK-MS-018</span>
+          <p class="desc">Effortless on/off and ultra-comfy foam footbed for city walks.</p>
+          <div class="card-meta">
+            <div class="sizes" aria-label="Select size">
+              <button class="size" data-size="39">39</button>
+              <button class="size" data-size="40">40</button>
+              <button class="size" data-size="41">41</button>
+            </div>
+            <div class="swatches" aria-label="Choose colorway">
+              <button class="swatch" title="Mist" style="--sw:#d8d8d8"></button>
+              <button class="swatch" title="Pebble" style="--sw:#a0a0a0"></button>
+              <button class="swatch" title="Coal" style="--sw:#121212"></button>
+            </div>
+          </div>
+          <button class="btn-primary add-to-cart">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Collections -->
+  <section class="collections" id="collections" aria-labelledby="collectionsTitle">
+    <div class="section-header">
+      <h2 id="collectionsTitle">Curated Collections</h2>
+      <p>From street-ready heat to gym essentials.</p>
+    </div>
+    <div class="collection-grid">
+      <a class="collection-tile" href="#shop">Street Heat</a>
+      <a class="collection-tile" href="#shop">Minimalist</a>
+      <a class="collection-tile" href="#shop">Performance</a>
+      <a class="collection-tile" href="#shop">Limited Edition</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials" aria-labelledby="testimonialsTitle">
+    <div class="section-header">
+      <h2 id="testimonialsTitle">What Customers Say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <blockquote class="quote">
+        “Delivery was fast and the quality is A1. Drip secured!”
+        <cite>— Tobi, Lagos</cite>
+      </blockquote>
+      <blockquote class="quote">
+        “Love the curation. Makes finding new pairs too easy.”
+        <cite>— Ada, Abuja</cite>
+      </blockquote>
+      <blockquote class="quote">
+        “Great prices and smooth checkout. Highly recommend.”
+        <cite>— Emeka, Port Harcourt</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Newsletter / Contact -->
+  <section class="newsletter" id="contact" aria-labelledby="newsletterTitle">
+    <div class="section-header">
+      <h2 id="newsletterTitle">Stay in the Loop</h2>
+      <p>Get notified about new drops and exclusive offers.</p>
+    </div>
+    <form class="newsletter-form" action="#" method="post" onsubmit="return false;">
+      <input type="email" name="email" placeholder="Enter your email" aria-label="Email address">
+      <button class="btn-primary" type="submit">Subscribe</button>
+    </form>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <p>© 2025 Dripz & Kix. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div class="cart-overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-modal="true" role="dialog" hidden>
+    <div class="cart-header">
+      <h3 id="cartTitle">Your Cart</h3>
+      <button class="btn-close" id="closeCartBtn" type="button" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems" aria-live="polite"></div>
+    <div class="cart-footer">
+      <div class="cart-total" id="cartTotal">Total: ₦0</div>
+      <button class="btn-primary wide" type="button" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+  <script src="script.js?v=4"></script>
+</body>
+</html>
