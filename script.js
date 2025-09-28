@@ -18,6 +18,34 @@ const cartTotalEl = document.getElementById("cartTotal");
 const checkoutBtn = document.getElementById("checkoutBtn");
 let cart = [];
 
+// Navbar scroll effect
+const navbar = document.querySelector('.navbar');
+let lastScrollY = window.scrollY;
+
+function handleNavbarScroll() {
+  const currentScrollY = window.scrollY;
+  
+  if (currentScrollY > 50) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+  
+  lastScrollY = currentScrollY;
+}
+
+// Add scroll listener with throttling for performance
+let ticking = false;
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    requestAnimationFrame(() => {
+      handleNavbarScroll();
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
+
 // Ensure product images have graceful fallbacks (runs regardless of CTA presence)
 const fallbackSvg = encodeURIComponent(
     `<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'>
