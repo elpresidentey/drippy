@@ -19,20 +19,64 @@
 <body>
   <a href="#home" class="skip-link">Skip to content</a>
   <!-- Navbar -->
-  <header>
-    <nav class="navbar" aria-label="Main navigation">
-      <a class="logo" href="#home">Dripz & Kix</a>
-      <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNavigation" type="button">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="primaryNavigation">
-        <li><a href="#home" aria-current="page">Home</a></li>
-        <li><a href="#shop">Shop</a></li>
-        <li><a href="#collections">Collections</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="btn-cart" aria-label="Cart" type="button">🛒 Cart <span class="cart-count" aria-live="polite" aria-atomic="true">0</span></button>
+  <header class="header">
+    <nav class="nav-container" aria-label="Main navigation">
+      <div class="nav-brand">
+        <a class="brand-logo" href="#home">
+          <span class="logo-icon">👟</span>
+          <span class="logo-text">
+            <span class="logo-main">Dripz</span>
+            <span class="logo-accent">&</span>
+            <span class="logo-main">Kix</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="nav-center">
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" data-text="Home">
+              <span class="nav-icon">🏠</span>
+              <span class="nav-text">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#shop" class="nav-link" data-text="Shop">
+              <span class="nav-icon">🛍️</span>
+              <span class="nav-text">Shop</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#collections" class="nav-link" data-text="Collections">
+              <span class="nav-icon">📚</span>
+              <span class="nav-text">Collections</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-text="Contact">
+              <span class="nav-icon">📞</span>
+              <span class="nav-text">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <button class="search-btn" aria-label="Search">
+          <span class="search-icon">🔍</span>
+        </button>
+        <button class="cart-btn" aria-label="Shopping cart">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-badge" aria-live="polite">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
     </nav>
+  </header>
   </header>
 
   <!-- Hero Section -->

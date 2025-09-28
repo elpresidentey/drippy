@@ -1,14 +1,14 @@
 // Basic interactivity and UX enhancements
 const shopBtn = document.getElementById("shopNowBtn");
 const menuToggle = document.getElementById("menuToggle");
-const primaryNav = document.getElementById("primaryNavigation");
+const navMenu = document.getElementById("navMenu");
 const viewCollectionsBtn = document.getElementById("viewCollectionsBtn");
 const productGrid = document.querySelector(".product-grid");
 const productGrids = Array.from(document.querySelectorAll('.product-grid'));
 const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const toast = document.getElementById("toast");
-const cartBtn = document.querySelector(".btn-cart");
-const cartCountEl = document.querySelector(".cart-count");
+const cartBtn = document.querySelector(".cart-btn");
+const cartBadge = document.querySelector(".cart-badge");
 let cartCount = 0;
 const cartDrawer = document.getElementById("cartDrawer");
 const cartOverlay = document.getElementById("cartOverlay");
@@ -18,20 +18,64 @@ const cartTotalEl = document.getElementById("cartTotal");
 const checkoutBtn = document.getElementById("checkoutBtn");
 let cart = [];
 
-// Navbar scroll effect
-const navbar = document.querySelector('.navbar');
+// New Navbar functionality
+const header = document.querySelector('.header');
 let lastScrollY = window.scrollY;
 
 function handleNavbarScroll() {
   const currentScrollY = window.scrollY;
   
   if (currentScrollY > 50) {
-    navbar.classList.add('scrolled');
+    header.style.background = 'rgba(255, 255, 255, 0.98)';
+    header.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.12)';
   } else {
-    navbar.classList.remove('scrolled');
+    header.style.background = 'rgba(255, 255, 255, 0.95)';
+    header.style.boxShadow = '0 4px 24px rgba(0, 0, 0, 0.06)';
   }
   
   lastScrollY = currentScrollY;
+}
+
+// Mobile menu toggle
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+}
+
+// Close mobile menu when clicking on a link
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 768) {
+      menuToggle.classList.remove('active');
+      navMenu.classList.remove('active');
+    }
+  });
+});
+
+// Update active nav link based on scroll position
+function updateActiveNavLink() {
+  const sections = ['home', 'shop', 'collections', 'contact'];
+  const scrollPos = window.scrollY + 100;
+  
+  sections.forEach(sectionId => {
+    const section = document.getElementById(sectionId);
+    const navLink = document.querySelector(`[href="#${sectionId}"]`);
+    
+    if (section && navLink) {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      
+      if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+        // Remove active class from all links
+        navLinks.forEach(link => link.classList.remove('active'));
+        // Add active class to current link
+        navLink.classList.add('active');
+      }
+    }
+  });
 }
 
 // Add scroll listener with throttling for performance
@@ -40,6 +84,7 @@ window.addEventListener('scroll', () => {
   if (!ticking) {
     requestAnimationFrame(() => {
       handleNavbarScroll();
+      updateActiveNavLink();
       ticking = false;
     });
     ticking = true;
@@ -102,7 +147,7 @@ function showToast(message) {
 // Update cart count
 function updateCart(delta) {
   cartCount = Math.max(0, cartCount + delta);
-  if (cartCountEl) cartCountEl.textContent = String(cartCount);
+  if (cartBadge) cartBadge.textContent = String(cartCount);
 }
 
 // Hero slider: autoplay fade and change on hover
