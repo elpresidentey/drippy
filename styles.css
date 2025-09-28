@@ -338,17 +338,84 @@ body {
 .newsletter-form input[type="email"] { flex: 1 1 420px; max-width: 520px; padding: .9rem 1rem; border: 1px solid var(--border); border-radius: 30px; font: inherit; }
 
 /* Footer */
-footer {
-  text-align: center;
-  padding: 1.5rem;
-  background: #111;
+.footer {
+  background: var(--dark);
   color: #fff;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
-.footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0 8%; flex-wrap: wrap; }
-.footer-links { display: flex; gap: 1rem; }
-.footer-links a { color: #fff; text-decoration: none; opacity: .9; }
-.footer-links a:hover { color: var(--brand); }
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 3rem 5% 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding: 1.5rem 5%;
+  text-align: center;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-legal a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+  color: #fff;
+}
+
+.footer-tagline {
+  color: #999;
+  font-size: 0.85rem;
+  margin: 0;
+}
 
 /* Toast */
 #toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); background: #111; color: #fff; padding: .75rem 1rem; border-radius: 10px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); opacity: 0; pointer-events: none; transition: opacity .25s, transform .25s; z-index: 1000; }
@@ -416,7 +483,21 @@ footer {
   .product-grid { grid-template-columns: 1fr; }
   .collection-grid { grid-template-columns: repeat(2, 1fr); }
   .testimonials-grid { grid-template-columns: 1fr; }
-  .footer-inner { justify-content: center; text-align: center; }
+  .footer-content { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem; 
+    padding: 2rem 5% 1.5rem; 
+  }
+  
+  .footer-bottom-content { 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 0.5rem; 
+  }
+  
+  .footer-legal { 
+    justify-content: center; 
+  }
 }
 
 /* Focus styles for accessibility */
