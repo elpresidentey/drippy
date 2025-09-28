@@ -51,4 +51,4 @@ git push -u origin main
 ✅ SEO optimized
 ✅ Accessibility features
 
-The site is ready for production and will work perfectly on GitHub Pages!
+The site is ready for production and will work perfectly on GitHub Pages
