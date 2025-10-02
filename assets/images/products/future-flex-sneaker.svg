@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sole7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#39ff14;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#5b6cff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#39ff14;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="upper7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#343a40;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#495057;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#6c757d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#495057;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow7" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="glow7" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg7)"/>
+  
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid7" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f1f3f4" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid7)"/>
+  
+  <!-- Future Flex Sneaker -->
+  <g transform="translate(120, 180)" filter="url(#shadow7)">
+    <!-- Energy plate sole -->
+    <ellipse cx="280" cy="185" rx="255" ry="52" fill="url(#sole7)" filter="url(#glow7)"/>
+    <ellipse cx="280" cy="180" rx="245" ry="44" fill="#212529"/>
+    
+    <!-- Main futuristic body -->
+    <path d="M60 135 Q100 80 180 75 Q280 70 380 75 Q460 80 500 115 Q510 125 505 140 Q460 155 400 160 L120 160 Q70 150 60 135 Z" 
+          fill="url(#upper7)" stroke="#495057" stroke-width="1"/>
+    
+    <!-- Next-gen knit upper -->
+    <path d="M130 105 Q190 90 250 90 Q310 90 370 100 Q390 105 400 115 Q370 125 330 125 Q270 125 210 125 Q160 120 130 105 Z" 
+          fill="#6c757d" stroke="#868e96" stroke-width="1"/>
+    
+    <!-- Futuristic knit pattern -->
+    <g opacity="0.6">
+      <defs>
+        <pattern id="knit7" width="12" height="12" patternUnits="userSpaceOnUse">
+          <rect width="12" height="12" fill="none"/>
+          <path d="M0,6 Q6,0 12,6 Q6,12 0,6" stroke="#adb5bd" stroke-width="0.5" fill="none"/>
+        </pattern>
+      </defs>
+      <rect x="130" y="105" width="270" height="20" fill="url(#knit7)"/>
+    </g>
+    
+    <!-- Tech overlays -->
+    <path d="M105 120 Q145 110 185 110" stroke="#39ff14" stroke-width="3" fill="none" filter="url(#glow7)"/>
+    <path d="M375 110 Q415 120 455 135" stroke="#5b6cff" stroke-width="3" fill="none" filter="url(#glow7)"/>
+    
+    <!-- Futuristic lacing system -->
+    <rect x="200" y="85" width="120" height="42" rx="8" fill="#212529" stroke="#39ff14" stroke-width="2"/>
+    
+    <!-- High-tech closure system -->
+    <rect x="215" y="95" width="8" height="8" rx="2" fill="#39ff14" filter="url(#glow7)"/>
+    <rect x="235" y="92" width="8" height="8" rx="2" fill="#5b6cff" filter="url(#glow7)"/>
+    <rect x="255" y="92" width="8" height="8" rx="2" fill="#39ff14" filter="url(#glow7)"/>
+    <rect x="275" y="95" width="8" height="8" rx="2" fill="#5b6cff" filter="url(#glow7)"/>
+    <rect x="290" y="98" width="8" height="8" rx="2" fill="#39ff14" filter="url(#glow7)"/>
+    
+    <!-- Energy cables -->
+    <path d="M218 99 Q228 91 238 96" stroke="#39ff14" stroke-width="2" fill="none" filter="url(#glow7)"/>
+    <path d="M238 96 Q248 88 258 96" stroke="#5b6cff" stroke-width="2" fill="none" filter="url(#glow7)"/>
+    <path d="M258 96 Q268 88 278 99" stroke="#39ff14" stroke-width="2" fill="none" filter="url(#glow7)"/>
+    <path d="M278 99 Q285 94 293 102" stroke="#5b6cff" stroke-width="2" fill="none" filter="url(#glow7)"/>
+    
+    <!-- Future brand element -->
+    <circle cx="385" cy="120" r="12" fill="#212529" stroke="#39ff14" stroke-width="2"/>
+    <text x="385" y="126" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#39ff14">FLEX</text>
+    
+    <!-- Energy return visualization -->
+    <path d="M170 145 Q280 140 390 145" stroke="#39ff14" stroke-width="4" fill="none" filter="url(#glow7)"/>
+    <circle cx="220" cy="143" r="5" fill="#5b6cff" filter="url(#glow7)"/>
+    <circle cx="280" cy="142" r="5" fill="#39ff14" filter="url(#glow7)"/>
+    <circle cx="340" cy="143" r="5" fill="#5b6cff" filter="url(#glow7)"/>
+    
+    <!-- Energy plate pattern -->
+    <g opacity="0.9">
+      <path d="M120 170 Q280 165 440 170" stroke="#39ff14" stroke-width="3" fill="none" filter="url(#glow7)"/>
+      <path d="M140 175 Q280 172 420 175" stroke="#5b6cff" stroke-width="2" fill="none" filter="url(#glow7)"/>
+      
+      <!-- Energy nodes -->
+      <circle cx="180" cy="173" r="3" fill="#39ff14" filter="url(#glow7)"/>
+      <circle cx="220" cy="172" r="3" fill="#5b6cff" filter="url(#glow7)"/>
+      <circle cx="260" cy="171" r="3" fill="#39ff14" filter="url(#glow7)"/>
+      <circle cx="300" cy="171" r="3" fill="#5b6cff" filter="url(#glow7)"/>
+      <circle cx="340" cy="172" r="3" fill="#39ff14" filter="url(#glow7)"/>
+      <circle cx="380" cy="173" r="3" fill="#5b6cff" filter="url(#glow7)"/>
+    </g>
+  </g>
+  
+  <!-- Product label -->
+  <rect x="50" y="50" width="200" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#e9ecef" stroke-width="1"/>
+  <text x="70" y="75" font-family="Cabin, Arial, sans-serif" font-size="16" font-weight="600" fill="#495057">Future Flex</text>
+  <text x="70" y="95" font-family="Cabin, Arial, sans-serif" font-size="12" fill="#6c757d">Next-Gen Knit • Energy Plate</text>
+</svg>

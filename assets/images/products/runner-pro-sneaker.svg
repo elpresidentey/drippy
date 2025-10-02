@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sole5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c757d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#495057;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="upper5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#868e96;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6c757d;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow5" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg5)"/>
+  
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid5" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f1f3f4" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid5)"/>
+  
+  <!-- Runner Pro Sneaker -->
+  <g transform="translate(120, 180)" filter="url(#shadow5)">
+    <!-- Performance sole with energy return -->
+    <ellipse cx="280" cy="185" rx="250" ry="50" fill="url(#sole5)"/>
+    <ellipse cx="280" cy="180" rx="240" ry="42" fill="#6c757d"/>
+    <ellipse cx="280" cy="176" rx="230" ry="35" fill="#868e96"/>
+    
+    <!-- Main shoe body -->
+    <path d="M65 140 Q105 85 185 80 Q285 75 385 80 Q465 85 505 120 Q515 130 510 145 Q465 160 405 165 L125 165 Q75 155 65 140 Z" 
+          fill="url(#upper5)" stroke="#6c757d" stroke-width="1"/>
+    
+    <!-- Engineered mesh panels -->
+    <path d="M135 110 Q195 95 255 95 Q315 95 375 105 Q395 110 405 120 Q375 130 335 130 Q275 130 215 130 Q165 125 135 110 Z" 
+          fill="#adb5bd" stroke="#868e96" stroke-width="1"/>
+    
+    <!-- Mesh texture pattern -->
+    <g opacity="0.4">
+      <defs>
+        <pattern id="mesh5" width="8" height="8" patternUnits="userSpaceOnUse">
+          <rect width="8" height="8" fill="none"/>
+          <path d="M0,4 L4,0 M4,8 L8,4" stroke="#495057" stroke-width="0.5"/>
+        </pattern>
+      </defs>
+      <rect x="135" y="110" width="270" height="20" fill="url(#mesh5)"/>
+    </g>
+    
+    <!-- Performance overlays -->
+    <path d="M110 120 Q150 110 190 110" stroke="#495057" stroke-width="4" fill="none"/>
+    <path d="M370 110 Q410 120 450 135" stroke="#495057" stroke-width="4" fill="none"/>
+    
+    <!-- Lightweight construction lines -->
+    <path d="M160 125 Q220 120 280 120 Q340 120 400 125" stroke="#adb5bd" stroke-width="1.5" fill="none" opacity="0.8"/>
+    
+    <!-- Pro lacing system -->
+    <rect x="205" y="90" width="115" height="40" rx="5" fill="#6c757d" stroke="#495057" stroke-width="1"/>
+    
+    <!-- Performance eyelets -->
+    <rect x="220" y="100" width="7" height="7" rx="1" fill="#adb5bd"/>
+    <rect x="240" y="97" width="7" height="7" rx="1" fill="#adb5bd"/>
+    <rect x="260" y="97" width="7" height="7" rx="1" fill="#adb5bd"/>
+    <rect x="280" y="100" width="7" height="7" rx="1" fill="#adb5bd"/>
+    <rect x="295" y="103" width="7" height="7" rx="1" fill="#adb5bd"/>
+    
+    <!-- Technical laces -->
+    <path d="M223 103 Q233 95 243 100" stroke="#f8f9fa" stroke-width="2.5" fill="none"/>
+    <path d="M243 100 Q253 92 263 100" stroke="#f8f9fa" stroke-width="2.5" fill="none"/>
+    <path d="M263 100 Q273 92 283 103" stroke="#f8f9fa" stroke-width="2.5" fill="none"/>
+    <path d="M283 103 Q290 98 298 106" stroke="#f8f9fa" stroke-width="2.5" fill="none"/>
+    
+    <!-- Pro brand element -->
+    <circle cx="385" cy="125" r="10" fill="#495057" stroke="#adb5bd" stroke-width="1"/>
+    <text x="385" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#f8f9fa">PRO</text>
+    
+    <!-- Energy return technology -->
+    <path d="M180 155 Q280 150 380 155" stroke="#adb5bd" stroke-width="3" fill="none"/>
+    <circle cx="230" cy="153" r="4" fill="#f8f9fa" opacity="0.8"/>
+    <circle cx="280" cy="152" r="4" fill="#f8f9fa" opacity="0.8"/>
+    <circle cx="330" cy="153" r="4" fill="#f8f9fa" opacity="0.8"/>
+    
+    <!-- Performance sole pattern -->
+    <g opacity="0.8">
+      <path d="M125 170 Q280 165 435 170" stroke="#adb5bd" stroke-width="2" fill="none"/>
+      <path d="M145 175 Q280 172 415 175" stroke="#f8f9fa" stroke-width="1" fill="none"/>
+      
+      <!-- Traction elements -->
+      <ellipse cx="200" cy="173" rx="3" ry="2" fill="#adb5bd"/>
+      <ellipse cx="240" cy="172" rx="3" ry="2" fill="#adb5bd"/>
+      <ellipse cx="280" cy="171" rx="3" ry="2" fill="#adb5bd"/>
+      <ellipse cx="320" cy="172" rx="3" ry="2" fill="#adb5bd"/>
+      <ellipse cx="360" cy="173" rx="3" ry="2" fill="#adb5bd"/>
+    </g>
+  </g>
+  
+  <!-- Product label -->
+  <rect x="50" y="50" width="200" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#e9ecef" stroke-width="1"/>
+  <text x="70" y="75" font-family="Cabin, Arial, sans-serif" font-size="16" font-weight="600" fill="#495057">Runner Pro</text>
+  <text x="70" y="95" font-family="Cabin, Arial, sans-serif" font-size="12" fill="#6c757d">Lightweight • Energy Return</text>
+</svg>

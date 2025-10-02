@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sole9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c757d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#495057;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="upper9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8a8a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6c757d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#495057;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow9" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg9)"/>
+  
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid9" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f1f3f4" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid9)"/>
+  
+  <!-- Track Alpha Sneaker -->
+  <g transform="translate(120, 180)" filter="url(#shadow9)">
+    <!-- Performance-tuned sole -->
+    <ellipse cx="280" cy="185" rx="250" ry="50" fill="url(#sole9)"/>
+    <ellipse cx="280" cy="180" rx="240" ry="42" fill="#6c757d"/>
+    <ellipse cx="280" cy="176" rx="230" ry="35" fill="#8a8a8a"/>
+    
+    <!-- Main track body -->
+    <path d="M70 140 Q110 88 190 83 Q290 78 390 83 Q470 88 510 122 Q520 132 515 147 Q470 162 410 167 L130 167 Q80 157 70 140 Z" 
+          fill="url(#upper9)" stroke="#6c757d" stroke-width="1"/>
+    
+    <!-- Performance mesh sections -->
+    <path d="M140 112 Q200 97 260 97 Q320 97 380 107 Q400 112 410 122 Q380 132 340 132 Q280 132 220 132 Q170 127 140 112 Z" 
+          fill="#adb5bd" stroke="#868e96" stroke-width="1"/>
+    
+    <!-- Track spike pattern inspiration -->
+    <g opacity="0.5">
+      <defs>
+        <pattern id="track9" width="10" height="10" patternUnits="userSpaceOnUse">
+          <rect width="10" height="10" fill="none"/>
+          <circle cx="5" cy="5" r="1" fill="#495057"/>
+        </pattern>
+      </defs>
+      <rect x="140" y="112" width="270" height="20" fill="url(#track9)"/>
+    </g>
+    
+    <!-- Performance overlays -->
+    <path d="M115 122 Q155 112 195 112" stroke="#495057" stroke-width="4" fill="none"/>
+    <path d="M375 112 Q415 122 455 137" stroke="#495057" stroke-width="4" fill="none"/>
+    
+    <!-- Training support elements -->
+    <path d="M165 127 Q225 122 285 122 Q345 122 405 127" stroke="#adb5bd" stroke-width="2" fill="none" opacity="0.8"/>
+    
+    <!-- Track lacing system -->
+    <rect x="210" y="93" width="110" height="38" rx="5" fill="#6c757d" stroke="#495057" stroke-width="1"/>
+    
+    <!-- Performance eyelets -->
+    <rect x="225" y="103" width="6" height="6" rx="1" fill="#adb5bd"/>
+    <rect x="245" y="100" width="6" height="6" rx="1" fill="#adb5bd"/>
+    <rect x="265" y="100" width="6" height="6" rx="1" fill="#adb5bd"/>
+    <rect x="285" y="103" width="6" height="6" rx="1" fill="#adb5bd"/>
+    <rect x="300" y="106" width="6" height="6" rx="1" fill="#adb5bd"/>
+    
+    <!-- Track laces -->
+    <path d="M228 106 Q238 98 248 103" stroke="#f8f9fa" stroke-width="2.5" fill="none"/>
+    <path d="M248 103 Q258 95 268 103" stroke="#f8f9fa" stroke-width="2.5" fill="none"/>
+    <path d="M268 103 Q278 95 288 106" stroke="#f8f9fa" stroke-width="2.5" fill="none"/>
+    <path d="M288 106 Q295 101 303 109" stroke="#f8f9fa" stroke-width="2.5" fill="none"/>
+    
+    <!-- Alpha brand element -->
+    <circle cx="385" cy="127" r="10" fill="#495057" stroke="#adb5bd" stroke-width="1"/>
+    <text x="385" y="132" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#f8f9fa">α</text>
+    
+    <!-- Performance tuning indicators -->
+    <path d="M185 152 Q280 147 375 152" stroke="#adb5bd" stroke-width="3" fill="none"/>
+    <rect x="220" y="150" width="8" height="4" rx="1" fill="#f8f9fa" opacity="0.8"/>
+    <rect x="260" y="149" width="8" height="4" rx="1" fill="#f8f9fa" opacity="0.8"/>
+    <rect x="300" y="149" width="8" height="4" rx="1" fill="#f8f9fa" opacity="0.8"/>
+    <rect x="340" y="150" width="8" height="4" rx="1" fill="#f8f9fa" opacity="0.8"/>
+    
+    <!-- Track sole pattern -->
+    <g opacity="0.8">
+      <path d="M130 172 Q280 167 430 172" strok

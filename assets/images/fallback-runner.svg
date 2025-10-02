@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="runnerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#runnerBg)"/>
+  
+  <!-- Running shoe outline -->
+  <g transform="translate(150, 200)">
+    <!-- Athletic sole with tread pattern -->
+    <ellipse cx="250" cy="155" rx="210" ry="45" fill="#dee2e6" opacity="0.8"/>
+    <ellipse cx="250" cy="150" rx="200" ry="35" fill="#ced4da" opacity="0.6"/>
+    
+    <!-- Main shoe body - athletic style -->
+    <path d="M50 115 Q85 75 165 75 Q260 75 360 85 Q430 95 460 115 Q470 125 465 140 Q415 155 360 155 L100 155 Q55 145 50 115 Z" 
+          fill="#adb5bd" opacity="0.6"/>
+    
+    <!-- Mesh panels -->
+    <path d="M120 95 Q160 85 200 85 Q240 85 280 90 Q300 92 310 100 Q290 110 260 110 Q200 110 160 110 Q130 105 120 95 Z" 
+          fill="#868e96" opacity="0.3"/>
+    
+    <!-- Athletic stripes -->
+    <path d="M100 105 Q140 100 180 100" stroke="#6c757d" stroke-width="3" fill="none" opacity="0.6"/>
+    <path d="M320 100 Q360 105 400 115" stroke="#6c757d" stroke-width="3" fill="none" opacity="0.6"/>
+    
+    <!-- Performance lacing system -->
+    <rect x="170" y="80" width="90" height="35" rx="5" fill="#868e96" opacity="0.4"/>
+    
+    <!-- Athletic eyelets -->
+    <circle cx="180" cy="90" r="3" fill="#495057"/>
+    <circle cx="200" cy="88" r="3" fill="#495057"/>
+    <circle cx="220" cy="88" r="3" fill="#495057"/>
+    <circle cx="240" cy="90" r="3" fill="#495057"/>
+    <circle cx="250" cy="92" r="3" fill="#495057"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="380" text-anchor="middle" font-family="Cabin, Arial, sans-serif" font-size="24" fill="#6c757d" opacity="0.8">
+    Running shoe
+  </text>
+  <text x="400" y="410" text-anchor="middle" font-family="Cabin, Arial, sans-serif" font-size="16" fill="#868e96" opacity="0.6">
+    Image unavailable
+  </text>
+</svg>

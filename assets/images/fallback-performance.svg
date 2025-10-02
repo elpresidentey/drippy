@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="performanceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#performanceBg)"/>
+  
+  <!-- Performance sneaker outline -->
+  <g transform="translate(150, 200)">
+    <!-- High-tech sole with energy return -->
+    <ellipse cx="250" cy="158" rx="215" ry="48" fill="#dee2e6" opacity="0.8"/>
+    <ellipse cx="250" cy="152" rx="205" ry="40" fill="#ced4da" opacity="0.6"/>
+    <ellipse cx="250" cy="148" rx="195" ry="32" fill="#adb5bd" opacity="0.4"/>
+    
+    <!-- Main shoe body - performance style -->
+    <path d="M45 112 Q80 70 170 70 Q265 70 370 80 Q440 90 470 112 Q480 122 475 142 Q425 158 370 158 L95 158 Q50 148 45 112 Z" 
+          fill="#adb5bd" opacity="0.6"/>
+    
+    <!-- Performance mesh and overlays -->
+    <path d="M110 90 Q155 78 205 78 Q255 78 305 83 Q340 86 360 95 Q340 105 305 108 Q255 108 205 108 Q155 108 110 105 Z" 
+          fill="#868e96" opacity="0.3"/>
+    
+    <!-- Tech details -->
+    <path d="M380 95 Q420 100 450 110" stroke="#6c757d" stroke-width="4" fill="none" opacity="0.7"/>
+    <path d="M90 100 Q130 95 170 95" stroke="#6c757d" stroke-width="4" fill="none" opacity="0.7"/>
+    
+    <!-- Performance lacing system -->
+    <rect x="165" y="75" width="100" height="38" rx="6" fill="#868e96" opacity="0.4"/>
+    
+    <!-- High-tech eyelets -->
+    <rect x="175" y="85" width="6" height="6" rx="1" fill="#495057"/>
+    <rect x="195" y="83" width="6" height="6" rx="1" fill="#495057"/>
+    <rect x="215" y="83" width="6" height="6" rx="1" fill="#495057"/>
+    <rect x="235" y="85" width="6" height="6" rx="1" fill="#495057"/>
+    <rect x="250" y="87" width="6" height="6" rx="1" fill="#495057"/>
+    
+    <!-- Energy return indicator -->
+    <path d="M200 140 Q250 135 300 140" stroke="#6c757d" stroke-width="2" fill="none" opacity="0.6"/>
+    <circle cx="250" cy="138" r="4" fill="#495057" opacity="0.7"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="400" y="380" text-anchor="middle" font-family="Cabin, Arial, sans-serif" font-size="24" fill="#6c757d" opacity="0.8">
+    Performance shoe
+  </text>
+  <text x="400" y="410" text-anchor="middle" font-family="Cabin, Arial, sans-serif" font-size="16" fill="#868e96" opacity="0.6">
+    Image unavailable
+  </text>
+</svg>

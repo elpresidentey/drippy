@@ -1,0 +1,63 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="colorBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#edf2f7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="colorAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f093fb;stop-opacity:1" />
+    </linearGradient>
+    <filter id="colorShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#colorBg)"/>
+  
+  <!-- Sneaker Shadow -->
+  <ellipse cx="400" cy="520" rx="285" ry="42" fill="rgba(102,126,234,0.15)"/>
+  
+  <!-- Main Colorful Sneaker -->
+  <g transform="translate(95, 195)" filter="url(#colorShadow)">
+    <!-- Sole -->
+    <ellipse cx="305" cy="285" rx="285" ry="52" fill="#e2e8f0"/>
+    <ellipse cx="305" cy="280" rx="275" ry="42" fill="#f7fafc"/>
+    
+    <!-- Main Shoe Body -->
+    <path d="M75 240 Q115 180 215 180 Q325 180 475 190 Q555 200 595 240 Q605 250 600 265 Q550 280 475 280 L135 280 Q85 270 75 240 Z" fill="url(#colorAccent)"/>
+    
+    <!-- Color Panels -->
+    <path d="M135 210 Q180 195 230 195 Q280 195 330 200 Q360 203 380 215 Q360 225 330 228 Q280 228 230 228 Q180 228 135 225 Z" fill="#667eea" opacity="0.9"/>
+    
+    <!-- Accent Stripe -->
+    <path d="M400 215 Q440 220 480 230" stroke="#f093fb" stroke-width="6" fill="none"/>
+    <path d="M125 220 Q165 215 205 215" stroke="#764ba2" stroke-width="6" fill="none"/>
+    
+    <!-- Lace Area -->
+    <rect x="235" y="185" width="115" height="48" rx="10" fill="#667eea"/>
+    
+    <!-- Colorful Eyelets -->
+    <circle cx="250" cy="200" r="4" fill="#f093fb"/>
+    <circle cx="275" cy="198" r="4" fill="#764ba2"/>
+    <circle cx="300" cy="198" r="4" fill="#667eea"/>
+    <circle cx="325" cy="200" r="4" fill="#f093fb"/>
+    <circle cx="340" cy="203" r="4" fill="#764ba2"/>
+    
+    <!-- Gradient Laces -->
+    <path d="M250 200 L275 210 L300 200 L325 210 L340 203" stroke="#f7fafc" stroke-width="3" fill="none"/>
+    <path d="M250 210 L275 200 L300 210 L325 200" stroke="#f7fafc" stroke-width="3" fill="none"/>
+    
+    <!-- Brand Logo -->
+    <circle cx="495" cy="245" r="24" fill="#f7fafc"/>
+    <text x="495" y="251" text-anchor="middle" font-family="Cabin, Arial, sans-serif" font-size="16" font-weight="bold" fill="#667eea">D</text>
+    
+    <!-- Color Accents -->
+    <circle cx="150" cy="255" r="8" fill="#f093fb" opacity="0.8"/>
+    <circle cx="450" cy="255" r="8" fill="#764ba2" opacity="0.8"/>
+  </g>
+  
+  <!-- Product Label -->
+  <text x="400" y="570" text-anchor="middle" font-family="Cabin, Arial, sans-serif" font-size="18" font-weight="600" fill="#667eea" opacity="0.9">Color Pop</text>
+</svg>

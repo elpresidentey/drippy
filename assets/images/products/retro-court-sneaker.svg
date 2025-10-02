@@ -1,0 +1,101 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sole4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ced4da;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#adb5bd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="upper4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f1f3f4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow4" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg4)"/>
+  
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid4" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f1f3f4" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid4)"/>
+  
+  <!-- Retro Court Sneaker -->
+  <g transform="translate(120, 180)" filter="url(#shadow4)">
+    <!-- Classic court sole -->
+    <ellipse cx="280" cy="175" rx="235" ry="40" fill="url(#sole4)"/>
+    
+    <!-- Main shoe body -->
+    <path d="M90 145 Q130 110 210 105 Q310 100 410 105 Q490 110 530 140 Q540 150 535 165 Q490 175 430 175 L150 175 Q100 165 90 145 Z" 
+          fill="url(#upper4)" stroke="#e9ecef" stroke-width="1"/>
+    
+    <!-- Classic toe cap -->
+    <path d="M90 145 Q130 125 190 120 Q230 120 270 130 Q260 155 190 160 Q140 160 90 145 Z" 
+          fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+    
+    <!-- Retro side stripe -->
+    <path d="M270 130 Q350 125 430 135 Q460 140 480 155 Q460 165 430 165 Q350 160 270 160 Z" 
+          fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+    
+    <!-- Vintage perforations -->
+    <g opacity="0.6">
+      <circle cx="200" cy="140" r="2" fill="#ced4da"/>
+      <circle cx="210" cy="138" r="2" fill="#ced4da"/>
+      <circle cx="220" cy="138" r="2" fill="#ced4da"/>
+      <circle cx="230" cy="140" r="2" fill="#ced4da"/>
+      <circle cx="240" cy="142" r="2" fill="#ced4da"/>
+      
+      <circle cx="200" cy="150" r="2" fill="#ced4da"/>
+      <circle cx="210" cy="148" r="2" fill="#ced4da"/>
+      <circle cx="220" cy="148" r="2" fill="#ced4da"/>
+      <circle cx="230" cy="150" r="2" fill="#ced4da"/>
+      <circle cx="240" cy="152" r="2" fill="#ced4da"/>
+    </g>
+    
+    <!-- Classic lacing area -->
+    <rect x="230" y="115" width="80" height="30" rx="3" fill="#ffffff" stroke="#e9ecef" stroke-width="1"/>
+    
+    <!-- Retro eyelets -->
+    <circle cx="245" cy="125" r="3.5" fill="#adb5bd" stroke="#868e96" stroke-width="1"/>
+    <circle cx="265" cy="122" r="3.5" fill="#adb5bd" stroke="#868e96" stroke-width="1"/>
+    <circle cx="285" cy="122" r="3.5" fill="#adb5bd" stroke="#868e96" stroke-width="1"/>
+    <circle cx="295" cy="125" r="3.5" fill="#adb5bd" stroke="#868e96" stroke-width="1"/>
+    
+    <!-- Classic laces -->
+    <path d="M245 125 Q255 118 265 122" stroke="#f8f9fa" stroke-width="2.5" fill="none"/>
+    <path d="M265 122 Q275 115 285 122" stroke="#f8f9fa" stroke-width="2.5" fill="none"/>
+    <path d="M285 122 Q290 118 295 125" stroke="#f8f9fa" stroke-width="2.5" fill="none"/>
+    
+    <!-- Retro brand logo -->
+    <rect x="375" y="125" width="20" height="20" rx="2" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+    <text x="385" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6c757d">D&K</text>
+    
+    <!-- Vintage stitching -->
+    <path d="M110 160 Q200 155 290 155 Q380 155 470 160" 
+          stroke="#ced4da" stroke-width="1.5" stroke-dasharray="4,2" fill="none"/>
+    
+    <!-- Court sole pattern -->
+    <g opacity="0.7">
+      <path d="M130 170 Q280 167 430 170" stroke="#868e96" stroke-width="1.5" fill="none"/>
+      <rect x="180" y="168" width="4" height="4" fill="#868e96"/>
+      <rect x="220" y="167" width="4" height="4" fill="#868e96"/>
+      <rect x="260" y="166" width="4" height="4" fill="#868e96"/>
+      <rect x="300" y="166" width="4" height="4" fill="#868e96"/>
+      <rect x="340" y="167" width="4" height="4" fill="#868e96"/>
+      <rect x="380" y="168" width="4" height="4" fill="#868e96"/>
+    </g>
+  </g>
+  
+  <!-- Product label -->
+  <rect x="50" y="50" width="200" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#e9ecef" stroke-width="1"/>
+  <text x="70" y="75" font-family="Cabin, Arial, sans-serif" font-size="16" font-weight="600" fill="#495057">Retro Court</text>
+  <text x="70" y="95" font-family="Cabin, Arial, sans-serif" font-size="12" fill="#6c757d">Throwback Style • Modern Cushioning</text>
+</svg>

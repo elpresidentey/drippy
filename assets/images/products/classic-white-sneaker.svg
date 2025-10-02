@@ -1,0 +1,48 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  
+  <!-- Sneaker Shadow -->
+  <ellipse cx="400" cy="520" rx="280" ry="40" fill="rgba(0,0,0,0.1)"/>
+  <!-- Main Sneaker Body -->
+  <g transform="translate(100, 200)" filter="url(#shadow)">
+    <!-- Sole -->
+    <ellipse cx="300" cy="280" rx="280" ry="50" fill="#f5f5f5"/>
+    <ellipse cx="300" cy="275" rx="270" ry="40" fill="#ffffff"/>
+    
+    <!-- Main Shoe Body -->
+    <path d="M80 240 Q120 180 220 180 Q320 180 460 190 Q540 200 580 240 Q590 250 580 260 530 270 460 270 L140 270 Q90 260 80 240 Z" fill="#ffffff" stroke="#e9ecef" stroke-width="2"/>
+    
+    <!-- Classic Toe Cap -->
+    <path d="M80 240 Q120 210 180 210 Q240 210 280 230 Q270 250 220 255 Q160 255 80 240 Z" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    
+    <!-- Lace Area -->
+    <rect x="240" y="190" width="120" height="50" rx="8" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+    
+    <!-- Eyelets -->
+    <circle cx="260" cy="205" r="4" fill="#6c757d"/>
+    <circle cx="290" cy="203" r="4" fill="#6c757d"/>
+    <circle cx="320" cy="203" r="4" fill="#6c757d"/>
+    <circle cx="350" cy="205" r="4" fill="#6c757d"/>
+    
+    <!-- Laces -->
+    <path d="M260 205 L290 215 L320 205 L350 215" stroke="#adb5bd" stroke-width="2" fill="none"/>
+    <path d="M260 215 L290 205 L320 215 L350 205" stroke="#adb5bd" stroke-width="2" fill="none"/>
+    
+    <!-- Brand Logo Area -->
+    <circle cx="480" cy="230" r="20" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+    <text x="480" y="235" text-anchor="middle" font-family="Cabin, Arial, sans-serif" font-size="14" font-weight="bold" fill="#6c757d">D</text>
+  </g>
+  
+  <!-- Product Label -->
+  <text x="400" y="570" text-anchor="middle" font-family="Cabin, Arial, sans-serif" font-size="18" font-weight="600" fill="#495057" opacity="0.8">Classic White</text>
+</svg>

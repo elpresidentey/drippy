@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmation | Dripz & Kix</title>
+  <meta name="description" content="Your order has been confirmed! Thank you for shopping with Dripz & Kix.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="theme-color" content="#0f0f0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="checkout.css?v=1">
+</head>
+<body>
+  <a href="#confirmation-main" class="skip-link">Skip to confirmation</a>
+  
+  <!-- Simplified Header -->
+  <header class="checkout-header">
+    <nav class="checkout-nav" aria-label="Confirmation navigation">
+      <div class="checkout-brand">
+        <a class="brand-logo" href="index.html">
+          <span class="logo-icon">👟</span>
+          <span class="logo-text">
+            <span class="logo-main">Dripz</span>
+            <span class="logo-accent">&</span>
+            <span class="logo-main">Kix</span>
+          </span>
+        </a>
+      </div>
+      
+      <!-- Breadcrumb Navigation -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item">
+            <a href="index.html#shop" class="breadcrumb-link">Shop</a>
+          </li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator" aria-hidden="true">›</span>
+            <a href="checkout.html" class="breadcrumb-link">Checkout</a>
+          </li>
+          <li class="breadcrumb-item">
+            <span class="breadcrumb-separator" aria-hidden="true">›</span>
+            <span class="breadcrumb-current" aria-current="page">Confirmation</span>
+          </li>
+        </ol>
+      </nav>
+      
+      <!-- Security Indicators -->
+      <div class="security-badges">
+        <span class="security-badge" title="Order Confirmed">
+          <span class="security-icon">✅</span>
+          <span class="security-text">Confirmed</span>
+        </span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Confirmation Content -->
+  <main id="confirmation-main" class="checkout-main">
+    <div class="confirmation-container">
+      
+      <!-- Order Confirmation -->
+      <div class="confirmation-content">
+        
+        <!-- Success Header -->
+        <div class="confirmation-header">
+          <div class="success-icon">🎉</div>
+          <h1 class="confirmation-title">Order Confirmed!</h1>
+          <p class="confirmation-subtitle">Thank you for your purchase. Your order has been received and is being processed.</p>
+        </div>
+
+        <!-- Order Details -->
+        <div class="order-details" id="orderDetails">
+          <div class="order-summary-card">
+            <h2 class="card-title">Order Summary</h2>
+            
+            <div class="order-info">
+              <div class="info-row">
+                <span class="info-label">Order Number:</span>
+                <span class="info-value order-number" id="orderNumber">Loading...</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Order Date:</span>
+                <span class="info-value" id="orderDate">Loading...</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Estimated Delivery:</span>
+                <span class="info-value" id="estimatedDelivery">Loading...</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Payment Method:</span>
+                <span class="info-value" id="paymentMethod">Loading...</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ordered Items -->
+          <div class="ordered-items-card">
+            <h3 class="card-title">Items Ordered</h3>
+            <div class="ordered-items" id="orderedItems">
+              <!-- Items will be populated by JavaScript -->
+            </div>
+          </div>
+
+          <!-- Shipping Information -->
+          <div class="shipping-info-card">
+            <h3 class="card-title">Shipping Information</h3>
+            <div class="shipping-details" id="shippingDetails">
+              <!-- Shipping details will be populated by JavaScript -->
+            </div>
+          </div>
+
+          <!-- Order Total -->
+          <div class="order-total-card">
+            <h3 class="card-title">Order Total</h3>
+            <div class="total-breakdown" id="totalBreakdown">
+              <!-- Total breakdown will be populated by JavaScript -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Next Steps -->
+        <div class="next-steps">
+          <h3 class="steps-title">What happens next?</h3>
+          <div class="steps-list">
+            <div class="step">
+              <div class="step-icon">📧</div>
+              <div class="step-content">
+                <div class="step-title">Confirmation Email</div>
+                <div class="step-description">You'll receive an order confirmation email shortly with all the details.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-icon">📦</div>
+              <div class="step-content">
+                <div class="step-title">Order Processing</div>
+                <div class="step-description">We'll prepare your sneakers and get them ready for delivery.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-icon">🚚</div>
+              <div class="step-content">
+                <div class="step-title">Delivery</div>
+                <div class="step-description">Your order will be delivered to your specified address.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="confirmation-actions">
+          <a href="index.html#shop" class="btn-primary">Continue Shopping</a>
+          <button type="button" class="btn-secondary" id="printOrderBtn">Print Order Details</button>
+        </div>
+
+        <!-- Support Information -->
+        <div class="support-info">
+          <h4 class="support-title">Need Help?</h4>
+          <p class="support-text">
+            If you have any questions about your order, please contact our customer support team:
+          </p>
+          <div class="support-contacts">
+            <a href="tel:+2348012345678" class="support-contact">
+              <span class="contact-icon">📞</span>
+              <span class="contact-text">+234 801 234 5678</span>
+            </a>
+            <a href="mailto:support@dripzkix.com" class="support-contact">
+              <span class="contact-icon">📧</span>
+              <span class="contact-text">support@dripzkix.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Confirmation Footer -->
+  <footer class="checkout-footer">
+    <div class="footer-content">
+      <div class="footer-security">
+        <p class="footer-text">
+          <span class="security-icon">🔒</span>
+          Your order information is secure and protected
+        </p>
+      </div>
+      <div class="footer-support">
+        <p class="footer-text">
+          © 2024 Dripz & Kix. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="confirmation.js"></script>
+</body>
+</html>

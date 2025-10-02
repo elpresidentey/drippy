@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sole6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e9ecef;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ced4da;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="upper6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f1f3f4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow6" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg6)"/>
+  
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid6" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f1f3f4" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid6)"/>
+  
+  <!-- Minimal Slip Sneaker -->
+  <g transform="translate(120, 180)" filter="url(#shadow6)">
+    <!-- Comfortable foam sole -->
+    <ellipse cx="280" cy="175" rx="230" ry="38" fill="url(#sole6)"/>
+    
+    <!-- Main slip-on body -->
+    <path d="M100 145 Q140 115 220 110 Q320 105 420 110 Q500 115 540 145 Q545 155 540 165 Q495 175 435 175 L165 175 Q110 165 100 145 Z" 
+          fill="url(#upper6)" stroke="#dee2e6" stroke-width="1"/>
+    
+    <!-- Slip-on opening -->
+    <path d="M180 125 Q280 115 380 125 Q400 130 410 140 Q390 150 360 150 Q280 150 200 150 Q170 145 180 125 Z" 
+          fill="#ffffff" stroke="#e9ecef" stroke-width="1"/>
+    
+    <!-- Minimal design elements -->
+    <path d="M120 150 Q160 140 200 140" stroke="#ced4da" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M380 140 Q420 150 460 160" stroke="#ced4da" stroke-width="2" fill="none" opacity="0.6"/>
+    
+    <!-- Comfort footbed indication -->
+    <ellipse cx="280" cy="160" rx="180" ry="8" fill="#f8f9fa" opacity="0.8"/>
+    
+    <!-- Elastic side panels -->
+    <rect x="160" y="135" width="15" height="25" rx="2" fill="#dee2e6" opacity="0.7"/>
+    <rect x="185" y="135" width="15" height="25" rx="2" fill="#dee2e6" opacity="0.7"/>
+    <rect x="440" y="135" width="15" height="25" rx="2" fill="#dee2e6" opacity="0.7"/>
+    <rect x="465" y="135" width="15" height="25" rx="2" fill="#dee2e6" opacity="0.7"/>
+    
+    <!-- Minimal branding -->
+    <circle cx="380" cy="145" r="6" fill="#e9ecef" stroke="#ced4da" stroke-width="1"/>
+    <text x="380" y="149" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#6c757d">D&K</text>
+    
+    <!-- Subtle stitching -->
+    <path d="M120 165 Q200 160 280 160 Q360 160 440 165" 
+          stroke="#ced4da" stroke-width="1" stroke-dasharray="3,2" fill="none" opacity="0.6"/>
+    
+    <!-- Foam footbed texture -->
+    <g opacity="0.4">
+      <circle cx="220" cy="160" r="1.5" fill="#ced4da"/>
+      <circle cx="240" cy="159" r="1.5" fill="#ced4da"/>
+      <circle cx="260" cy="159" r="1.5" fill="#ced4da"/>
+      <circle cx="280" cy="160" r="1.5" fill="#ced4da"/>
+      <circle cx="300" cy="159" r="1.5" fill="#ced4da"/>
+      <circle cx="320" cy="159" r="1.5" fill="#ced4da"/>
+      <circle cx="340" cy="160" r="1.5" fill="#ced4da"/>
+    </g>
+    
+    <!-- Minimal sole pattern -->
+    <path d="M140 170 Q280 167 420 170" stroke="#adb5bd" stroke-width="1" fill="none" opacity="0.7"/>
+  </g>
+  
+  <!-- Product label -->
+  <rect x="50" y="50" width="200" height="60" rx="8" fill="rgba(255,255,255,0.9)" stroke="#e9ecef" stroke-width="1"/>
+  <text x="70" y="75" font-family="Cabin, Arial, sans-serif" font-size="16" font-weight="600" fill="#495057">Minimal Slip</text>
+  <text x="70" y="95" font-family="Cabin, Arial, sans-serif" font-size="12" fill="#6c757d">Effortless On/Off • Foam Footbed</text>
+</svg>
